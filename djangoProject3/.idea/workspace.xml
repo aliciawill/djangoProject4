@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2988ce6-1d57-4158-a739-b6d8a0d46a3f" name="Changes" comment="2022-01-08 6:00">
-      <changelist_data name="lim jungwon" email="" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/app5/js06.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/app5/js06.html" afterDir="false" />
-    </list>
+    <list default="true" id="c2988ce6-1d57-4158-a739-b6d8a0d46a3f" name="Changes" comment="2022-01-10 월요일" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,6 +128,7 @@
       <workItem from="1641428778943" duration="99000" />
       <workItem from="1641431281535" duration="15018000" />
       <workItem from="1641515342269" duration="19092000" />
+      <workItem from="1641771299468" duration="339000" />
     </task>
     <task id="LOCAL-00001" summary="2022-01-06 11:29">
       <created>1641436207274</created>
@@ -245,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641627562507</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="2022-01-10 월요일">
+      <created>1641771492741</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1641771492742</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +272,8 @@
     <MESSAGE value="2022-01-06 4:48" />
     <MESSAGE value="2022-01-06 6:00" />
     <MESSAGE value="2022-01-08 6:00" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022-01-08 6:00" />
+    <MESSAGE value="2022-01-10 월요일" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022-01-10 월요일" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
