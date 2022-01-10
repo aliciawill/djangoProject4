@@ -66,8 +66,13 @@ def js100(request):
 
 def map1(request):
     print('=================== map1호출됨.')
-    # 3장소의 위도 경도를 만들어서, html에 표시 
-    return render(request, "app5/map1.html")
+    # 3장소의 위도 경도를 만들어서, html에 표시
+    location = """
+    lats = [ 37.5705805429368, 37.560260, 37.689447 ]
+    lngs = [ 126.99212654046664, 126.942149, 127.046558 ]
+    """
+    context = {'location' : location }
+    return render(request, "app5/map1.html", context)
 
 def map2(request):
     print('=================== map2호출됨.')
