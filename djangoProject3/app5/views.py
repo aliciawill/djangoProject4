@@ -1,3 +1,4 @@
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
 
 # Create your views here.
@@ -78,3 +79,14 @@ def map2(request):
     print('=================== map2호출됨.')
     # 37.51725181697697, 126.90373968262504
     return render(request, "app5/map2.html")
+
+def ajax1(request):
+    print('=================== ajax1호출됨.')
+    return render(request, "app5/ajax1.html")
+
+def target(request):
+    print('=================== target호출됨.')
+    context = {'result' : 100, 'age' : 100, 'tel' : [100, 200, 300]}
+    # return render(request, "app5/target.html", context)
+    # return HttpResponse(context)
+    return JsonResponse(context)
