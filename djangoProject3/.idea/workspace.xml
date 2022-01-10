@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2988ce6-1d57-4158-a739-b6d8a0d46a3f" name="Changes" comment="2022-01-10 월요일">
-      <change afterPath="$PROJECT_DIR$/templates/app5/js10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/app5/js100.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/app5/map1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/app5/map2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app5/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app5/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app5/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app5/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/app5/js06_.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/app5/js09.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/app5/js100.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/app5/js100.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/app5/start5.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/app5/start5.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,7 +150,7 @@
       <workItem from="1641428778943" duration="99000" />
       <workItem from="1641431281535" duration="15018000" />
       <workItem from="1641515342269" duration="19092000" />
-      <workItem from="1641771299468" duration="10962000" />
+      <workItem from="1641771299468" duration="14324000" />
     </task>
     <task id="LOCAL-00001" summary="2022-01-06 11:29">
       <created>1641436207274</created>
@@ -285,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641778042661</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="2022-01-10 월요일">
+      <created>1641784399888</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1641784399888</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

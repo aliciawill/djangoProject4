@@ -63,3 +63,13 @@ def js100(request):
                'name' : ['hong', 'kim', 'apple'],
                }
     return render(request, "app5/js100.html", context)
+
+def map1(request):
+    print('=================== map1호출됨.')
+    # 3장소의 위도 경도를 만들어서, html에 표시 
+    return render(request, "app5/map1.html")
+
+def map2(request):
+    print('=================== map2호출됨.')
+    # 37.51725181697697, 126.90373968262504
+    return render(request, "app5/map2.html")
