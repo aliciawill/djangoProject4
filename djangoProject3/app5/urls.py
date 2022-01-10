@@ -12,4 +12,6 @@ urlpatterns = [
     path('/js04', app5.views.js04, name='js04'),
     path('/js05', app5.views.js05, name='js05'),
     path('/js06', app5.views.js06, name='js06'),
+    path('/js07', app5.views.js07, name='js07'),
+    path('/js08', app5.views.js08, name='js08'),
 ]
