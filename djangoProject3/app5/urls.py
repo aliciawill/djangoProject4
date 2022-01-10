@@ -21,4 +21,7 @@ urlpatterns = [
     path('/map2', app5.views.map2, name='map2'),
     path('/ajax1', app5.views.ajax1, name='ajax1'),
     path('/target', app5.views.target, name='target'),
+    path('/ajax2', app5.views.ajax2, name='ajax2'),
+    path('/target2', app5.views.target2, name='target2'),
+    path('/target3', app5.views.target3, name='target3'),
 ]

@@ -90,3 +90,17 @@ def target(request):
     # return render(request, "app5/target.html", context)
     # return HttpResponse(context)
     return JsonResponse(context)
+
+def ajax2(request):
+    print('=================== ajax2호출됨.')
+    return render(request, "app5/ajax2.html")
+
+def target2(request):
+    print('=================== target2호출됨.')
+    context = {"lat" : 37.570580, "lng" : 126.99212654}
+    return JsonResponse(context)
+
+def target3(request):
+    print('=================== target3호출됨.')
+    context = {"lat" : 37.5642135, "lng" : 127.0016985}
+    return JsonResponse(context)
