@@ -37,3 +37,29 @@ def js07(request):
 def js08(request):
     print('=================== js08호출됨.')
     return render(request, "app5/js08.html")
+
+def js09(request):
+    print('=================== js09호출됨.')
+    return render(request, "app5/js09.html")
+
+def js10(request):
+    print('=================== js10호출됨.')
+    #db연동 결과를 검색해서 가지고 온다.
+    #결과를 html에 보내주어야 한다.
+    context = {'userName': 'hong',
+               'field' : 'shoes',
+               'email' : 'aliciawill@kakao.com',
+               'contact' : '010-4904-2996',
+               'payValue' : 5000
+               }
+    return render(request, "app5/js10.html", context)
+
+def js100(request):
+    print('=================== js100호출됨.')
+    #db연동 결과를 검색해서 가지고 온다.
+    #결과를 html에 보내주어야 한다.
+    context = {'site': [100, 200, 300],
+               'url' : {'u1': 'naver', 'u2': 'daum', 'u3': 'google'},
+               'name' : ['hong', 'kim', 'apple'],
+               }
+    return render(request, "app5/js100.html", context)

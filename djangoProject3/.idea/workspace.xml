@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2988ce6-1d57-4158-a739-b6d8a0d46a3f" name="Changes" comment="2022-01-10 월요일">
-      <change afterPath="$PROJECT_DIR$/templates/app5/js06_.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/app5/js07.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/app5/js08.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/app5/js10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/app5/js100.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app5/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app5/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app5/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app5/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/app5/js06.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/app5/js06.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/app5/js06_.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/app5/js09.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/app5/start5.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/app5/start5.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +62,17 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/templates/app5/js01.html" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app5/urls.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/templates/app5/start5.html" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/templates/app5/js10.html" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app5/views.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/templates/app5/js04.html" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/templates/app5/js03.html" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/templates/app5/js02.html" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/templates/app5/js100.html" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -89,6 +99,9 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="ReadonlyStatusHandler">
+    <option name="SHOW_DIALOG" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -137,7 +150,7 @@
       <workItem from="1641428778943" duration="99000" />
       <workItem from="1641431281535" duration="15018000" />
       <workItem from="1641515342269" duration="19092000" />
-      <workItem from="1641771299468" duration="4682000" />
+      <workItem from="1641771299468" duration="10962000" />
     </task>
     <task id="LOCAL-00001" summary="2022-01-06 11:29">
       <created>1641436207274</created>
@@ -265,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641771699458</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="2022-01-10 월요일">
+      <created>1641778042661</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1641778042661</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
