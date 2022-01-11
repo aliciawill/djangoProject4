@@ -35,6 +35,7 @@ urlpatterns = [
     path('start4', app4.views.start4, name='start4'),
     path('app5', include('app5.urls'))
 ]
+
 from djangoProject3 import settings
 if settings.DEBUG:
     import debug_toolbar
