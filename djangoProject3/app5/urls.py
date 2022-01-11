@@ -10,6 +10,7 @@ urlpatterns = [
     path('/test/<id>', app5.views.person, name='person'),
     path('/test/del/<id>', app5.views.delete, name='delete'),
     path('/test/up/<id>', app5.views.update, name='update'),
+    path('/test/up2/go', app5.views.update2, name='update2'),
     path('/js01', app5.views.js01, name='js01'),
     path('/js02', app5.views.js02, name='js02'),
     path('/js03', app5.views.js03, name='js03'),

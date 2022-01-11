@@ -8,7 +8,7 @@ def delete(request, id):
     one = Test.objects.get(id=id)
     one.delete()
     print(id , '삭제됨.================')
-    return redirect('/app5/test')
+    v
     #redirect는 서버가 클라이언트에게 해당주소를 요청하도록 명령함.
 
 def update(request, id): # 수정할 수 있는 화면을 호출하는 함수
@@ -20,7 +20,17 @@ def update(request, id): # 수정할 수 있는 화면을 호출하는 함수
     return render(request, "app5/update.html", context)
 
 def update2(request): # 수정될 데이터 받아서 db에 update처리하는 함수
-    pass
+    data = request.POST
+    print('수정할 데이터들>> ', data)
+    #검색을 먼저 한다음에,
+    one = Test.objects.get(id = data.get('id'))
+    #특정한 컬럼값 변경해주고,
+    one.name = data.get('name')
+    one.tel = data.get('tel')
+    one.addr = data.get('addr')
+    one.save()
+    # 전체목록페이지를 호출해주자.
+    return redirect('/app5/test')
 
 def person(request, id):
     print('받은 id는>> ' , id)
