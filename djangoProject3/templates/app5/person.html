@@ -17,5 +17,12 @@
      회원tel:  {{ one.tel }} <br>
      회원addr:  {{ one.addr }} <br><hr color="red">
 {% endif %}
+<hr color="white">
+ <a href="/app5/test/del/{{ one.id }}">
+        <button style="background: red">회원삭제페이지로</button>
+ </a>
+ <a href="/app5/test/up/{{ one.id }}">
+        <button style="background: red">회원수정페이지로</button>
+ </a>
 </body>
 </html>

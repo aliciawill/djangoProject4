@@ -8,6 +8,8 @@ urlpatterns = [
     path('', app5.views.start5),
     path('/test', app5.views.test, name='test'),
     path('/test/<id>', app5.views.person, name='person'),
+    path('/test/del/<id>', app5.views.delete, name='delete'),
+    path('/test/up/<id>', app5.views.update, name='update'),
     path('/js01', app5.views.js01, name='js01'),
     path('/js02', app5.views.js02, name='js02'),
     path('/js03', app5.views.js03, name='js03'),

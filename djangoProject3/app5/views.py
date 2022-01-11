@@ -1,7 +1,26 @@
 from django.http import HttpResponse, JsonResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 from app5.models import Test
+
+def delete(request, id):
+    print('삭제할 id는>> ', id)
+    one = Test.objects.get(id=id)
+    one.delete()
+    print(id , '삭제됨.================')
+    return redirect('/app5/test')
+    #redirect는 서버가 클라이언트에게 해당주소를 요청하도록 명령함.
+
+def update(request, id): # 수정할 수 있는 화면을 호출하는 함수
+    print('수정할 id는>> ', id)
+    one = Test.objects.get(id=id) #db검색후, template파일에 넘겨주세요.
+    context = {
+        'one' : one
+    }
+    return render(request, "app5/update.html", context)
+
+def update2(request): # 수정될 데이터 받아서 db에 update처리하는 함수
+    pass
 
 def person(request, id):
     print('받은 id는>> ' , id)
