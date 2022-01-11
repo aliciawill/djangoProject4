@@ -94,9 +94,9 @@ def target0(request):
     return render(request, "app5/target0.html", context)
 
 def target00(request):
-    print('=================== ajax1호출됨.')
-    return render(request, "app5/ajax1.html")
-
+    print('=================== target00호출됨.')
+    context = {'today': -10, 'today2': 'bad'}
+    return render(request, "app5/target00.html", context)
 
 def target(request):
     print('=================== target호출됨.')
@@ -107,7 +107,7 @@ def target(request):
 
 def ajax2(request):
     print('=================== ajax2호출됨.')
-    return render(request, "app5/ajax2.html")
+    return render(request, "app5/ajax2_.html")
 
 def target2(request):
     print('=================== target2호출됨.')

@@ -12,7 +12,8 @@
                     url : "http://127.0.0.1:5555/app5/target0",
                     success : function (response) {
                         alert('받은 응답은 ' + response)
-                        $('#d1').html(response)
+                        $('#d1').append('- ' + response + '<br>')
+                        //text(), html(), append()
                     },
                     error : function () {
                         alert('통신 실패@@@@@')
