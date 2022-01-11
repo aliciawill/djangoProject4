@@ -100,7 +100,7 @@ def target00(request):
 
 def target(request):
     print('=================== target호출됨.')
-    context = {'result' : 100, 'age' : 100, 'tel' : [100, 200, 300]}
+    context = {'result' : 100, 'age' : '한글이야.', 'tel' : [100, 200, 300]}
     # return render(request, "app5/target.html", context)
     # return HttpResponse(context)
     return JsonResponse(context)
