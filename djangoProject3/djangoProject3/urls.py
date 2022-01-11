@@ -13,6 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path, include
 import app1.views
@@ -20,6 +21,10 @@ import app2.views
 import app3.views
 import app4.views
 import djangoProject3.views
+
+
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,3 +35,7 @@ urlpatterns = [
     path('start4', app4.views.start4, name='start4'),
     path('app5', include('app5.urls'))
 ]
+from djangoProject3 import settings
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns += [ url(r'^__debug__/', include(debug_toolbar.urls)), ]

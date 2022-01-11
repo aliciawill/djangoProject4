@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'app3.apps.App3Config',
     'app4.apps.App4Config',
     'app5.apps.App5Config',
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -52,7 +53,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
+
+INTERNAL_IPS = ('127.0.0.1')
 
 ROOT_URLCONF = 'djangoProject3.urls'
 
