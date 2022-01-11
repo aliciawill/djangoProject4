@@ -80,9 +80,23 @@ def map2(request):
     # 37.51725181697697, 126.90373968262504
     return render(request, "app5/map2.html")
 
+def ajax0(request):
+    print('=================== ajax0호출됨.')
+    return render(request, "app5/ajax0.html")
+
 def ajax1(request):
     print('=================== ajax1호출됨.')
     return render(request, "app5/ajax1.html")
+
+def target0(request):
+    print('=================== target0호출됨.')
+    context = {'result' : 100, 'sum' : 1000}
+    return render(request, "app5/target0.html", context)
+
+def target00(request):
+    print('=================== ajax1호출됨.')
+    return render(request, "app5/ajax1.html")
+
 
 def target(request):
     print('=================== target호출됨.')
