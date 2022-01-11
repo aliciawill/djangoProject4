@@ -1,6 +1,29 @@
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
 
+from app5.models import Test
+
+def person(request, id):
+    print('받은 id는>> ' , id)
+    # db검색해주세요.
+    one = Test.objects.get(id = id)
+    # 검색한 결과를 dic로 만들어주세요.
+    context = {
+        'one' : one
+    }
+    # person.html을 만들어서 dic를 넘겨주세요.
+    return render(request, "app5/person.html", context)
+    # person.html에 개인 정보를 넣어주세요.
+
+def test(request):
+    test_list = Test.objects.order_by('-name')[:10]
+    print('검색한 결과 >> ' ,  test_list)
+    print('검색한 결과 >> ', test_list[0])
+    context = {
+        "test_list" : test_list
+    }
+    return render(request, "app5/test.html", context)
+
 # Create your views here.
 def start5(request):
     print('==================== start5호출됨.')
@@ -100,6 +123,9 @@ def target00(request):
 
 def target(request):
     print('=================== target호출됨.')
+    data = request.GET
+    print(data)
+    print(data['name'], data['song'])
     context = {'result' : 100, 'age' : '한글이야.', 'tel' : [100, 200, 300]}
     # return render(request, "app5/target.html", context)
     # return HttpResponse(context)

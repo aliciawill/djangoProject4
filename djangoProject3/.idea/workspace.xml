@@ -5,9 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2988ce6-1d57-4158-a739-b6d8a0d46a3f" name="Changes" comment="2022-01-10 월요일">
+      <change afterPath="$PROJECT_DIR$/app2/migrations/0002_alter_product_price.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app5/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app5/migrations/0002_qna.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/app5/person.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/app5/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eccc2334-dcac-4fe0-a494-2071be62151c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eccc2334-dcac-4fe0-a494-2071be62151c.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app5/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app5/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app5/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app5/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app5/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app5/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app5/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app5/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/app5/ajax0.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/app5/ajax0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/app5/ajax1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/app5/ajax1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/app5/start5.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/app5/start5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/app5/target0.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/app5/target0.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +160,7 @@
       <workItem from="1641431281535" duration="15018000" />
       <workItem from="1641515342269" duration="19092000" />
       <workItem from="1641771299468" duration="22570000" />
-      <workItem from="1641860389833" duration="8877000" />
+      <workItem from="1641860389833" duration="17078000" />
     </task>
     <task id="LOCAL-00001" summary="2022-01-06 11:29">
       <created>1641436207274</created>
@@ -366,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641868199494</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="2022-01-10 월요일">
+      <created>1641870372244</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1641870372244</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

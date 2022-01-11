@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background: pink;
+        }
+
+    </style>
+</head>
+<body>
+{% if one %}
+     회원id:  {{ one.id }} <br>
+     회원name:  {{ one.name }} <br>
+     회원tel:  {{ one.tel }} <br>
+     회원addr:  {{ one.addr }} <br><hr color="red">
+{% endif %}
+</body>
+</html>
