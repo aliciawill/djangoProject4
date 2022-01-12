@@ -13,6 +13,23 @@
         .td1 {
             width: 100px;
         }
+        .td1:hover {
+            width: 100px;
+            background: pink;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .td2:hover {
+            width: 200px;
+            background: aqua;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .td3:hover {
+            width: 120px;
+            background: bisque;
+            font-weight: bold;
+        }
         .td2 {
             width: 200px;
         }
@@ -33,9 +50,9 @@
     {% if list %}
         {% for one in list %}
             <tr>
-                <td>{{one.id}}</td>
-                <td>{{one.title}}</td>
-                <td>{{one.writer}}</td>
+                <td class="td1">{{one.id}}</td>
+                <td class="td2">{{one.title}}</td>
+                <td class="td3">{{one.writer}}</td>
             </tr>
         {% endfor %}
     {% endif %}
