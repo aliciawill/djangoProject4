@@ -14,5 +14,6 @@ urlpatterns = [
     path('/delete/<id>', app1.views.delete, name='delete'),
     path('/update/<id>', app1.views.update, name='update'),
     path('/update2', app1.views.update2, name='update2'),
+    path('/many_insert', app1.views.many_insert, name='many_insert'),
 ]
 

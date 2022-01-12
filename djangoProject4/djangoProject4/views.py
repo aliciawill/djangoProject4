@@ -7,4 +7,10 @@ def start(request):
                         "<button style='width:200px; background:red;'>" +
                         "to Board" +
                         "</button>" +
-                        "</a>")
+                        "</a><br>" +
+                        "<a href='app1/many_insert'>" +
+                        "<button style='width:200px; background:red;'>" +
+                        "to many_insert" +
+                        "</button>" +
+                        "</a>"
+                        )

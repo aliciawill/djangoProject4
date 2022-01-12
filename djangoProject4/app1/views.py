@@ -1,3 +1,4 @@
+from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
 
 # Create your views here.
@@ -7,15 +8,23 @@ from app1.models import Board
 def index(request):
     return render(request, 'app1/index.html')
 
+
 def list(request):
     print('list함수 호출됨.')
     # board에서 전체 리스트를 검색해서 가지고 온다.
+    page = request.GET.get('page', 1)
     board_list = Board.objects.order_by('-id')
     print('db에서 가지고 온 data>> ' , board_list)
     # 가지고 온 데이터를 dic만들어준다.
+    paginator = Paginator(board_list, 5)
+    page_obj = paginator.get_page(page)
+
     context = {
-        'list' : board_list
+        'list' : page_obj
     }
+    # context = {
+    #     'list' : board_list
+    # }
     # 데이터를 넣어서 보내줄 template지정, 데이터를 넘겨줌.
     return render(request, 'app1/list.html', context)
 
@@ -87,4 +96,13 @@ def update2(request):
 
     #수정된 것 저장.
     row.save()
+    return redirect('/app1/list')
+
+def many_insert(request):
+    for i in range(300):
+        b = Board(title='title' + str(i),
+                  content='content' + str(i),
+                  writer='user' + str(i)
+                  )
+        b.save()
     return redirect('/app1/list')
