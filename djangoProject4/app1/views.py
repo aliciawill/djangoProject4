@@ -85,6 +85,7 @@ def update2(request):
     row.content = content
     row.writer = writer
 
+
     #수정된 것 저장.
     row.save()
     return redirect('/app1/list')
