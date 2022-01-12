@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        td {
+            text-align: center;
+        }
+        .tdtop {
+            background: lime;
+        }
+        .td1 {
+            width: 100px;
+        }
+        .td2 {
+            width: 200px;
+        }
+        .td3 {
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+<h3>게시판 리스트입니다.</h3>
+<hr color="blue">
+<table>
+    <tr>
+        <td class="td1 tdtop">번호</td>
+        <td class="td2 tdtop">제목</td>
+        <td class="td3 tdtop">작성자</td>
+    </tr>
+    {% if list %}
+        {% for one in list %}
+            <tr>
+                <td>{{one.id}}</td>
+                <td>{{one.title}}</td>
+                <td>{{one.writer}}</td>
+            </tr>
+        {% endfor %}
+    {% endif %}
+</table>
+</body>
+</html>
