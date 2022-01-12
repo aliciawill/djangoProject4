@@ -18,10 +18,39 @@
             width: 500px;
             height: 5px;
         }
+        button {
+            width: 150px;
+            height: 50px;
+            background: aqua;
+            border-radius: 20px;
+        }
+        #left {
+            width: 100px;
+            background: white;
+        }
+        table{
+            margin-left: 100px;
+        }
+        button:hover{
+            width: 200px;
+            height: 50px;
+            background: pink;
+            border-radius: 20px 50px 20px 50px;
+            border: 10px dotted blue;
+        }
     </style>
 </head>
 <body>
 <h3>게시판 메인 화면입니다.</h3>
 <hr>
+<table border="1">
+    <tr>
+        <td id="left">게시판 목록</td>
+        <td>
+            <a href=""><button>GO</button></a>
+        </td>
+    </tr>
+
+</table>
 </body>
 </html>
