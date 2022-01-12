@@ -33,6 +33,21 @@ def one(request, id):
 def insert(request):
     return render(request, 'app1/insert.html')
 
+def insert2(request):
+    data = request.POST
+    print(data)
+    print('게시물의 title >> ', data.get('title'))
+    print('게시물의 content >> ', data.get('content'))
+    print('게시물의 writer >> ', data.get('writer'))
+    ### 받은 데이터로 db에 저장해야함.
+    ### 객체 생성--> save()
+    title = data.get('title')
+    content = data.get('content')
+    writer = data.get('writer')
+    board = Board(title= title, content= content, writer= writer)
+    board.save()
+    return redirect('/app1/list')
+
 def delete(request, id):
     print('받은 id는>> ', id)
     # id를 가지고 일단 검색해오세요.
@@ -43,8 +58,33 @@ def delete(request, id):
     # 리스트로 다음페이지를 호출하게 해주세요.
     return redirect('/app1/list')
 
-def update(request):
-    pass
+def update(request, id):
+    print('받은 id는>> ', id)
+    # 받은 id를 가지고 db에서 가지고 온다.
+    # dic로 만든 데이터를 template에 넘겨준다.
+    # id를 가지고 검색해주세요.
+    one = Board.objects.get(id=id)
+    # dic로 만들어주세요.
+    context = {
+        "one": one
+    }
+    # template에 넣어주세요.
+    return render(request, 'app1/update.html', context)
 
 def update2(request):
-    pass
+    data = request.POST
+    id = data.get('id')
+    title = data.get('title')
+    content = data.get('content')
+    writer = data.get('writer')
+
+    #수정을 할 때는 미리 검색을 한 번 하고,
+    row = Board.objects.get(id = id)
+    #해당 컬럼값 변경해주고
+    row.title = title
+    row.content = content
+    row.writer = writer
+
+    #수정된 것 저장.
+    row.save()
+    return redirect('/app1/list')

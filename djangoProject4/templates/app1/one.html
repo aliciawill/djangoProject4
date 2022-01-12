@@ -40,7 +40,7 @@
     </tr>
     <tr>
         <td>작성자</td>
-        <td>{{ one.content }}</td>
+        <td>{{ one.writer }}</td>
     </tr>
     <tr>
         <td colspan="2">
@@ -49,6 +49,9 @@
             </a>
             <a href="/app1/delete/{{ one.id }}">
                 <button style="background: pink">게시물 삭제</button>
+            </a>
+             <a href="/app1/list">
+                <button style="background: blueviolet">게시물 리스트로</button>
             </a>
         </td>
     </tr>
