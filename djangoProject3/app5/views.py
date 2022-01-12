@@ -173,3 +173,8 @@ def target3(request): #동대문 위도, 경도
     print('=================== target3호출됨.')
     context = {"lat" : 37.5642135, "lng" : 127.0016985}
     return JsonResponse(context)
+
+
+
+
+
