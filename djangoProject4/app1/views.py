@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 # Create your views here.
 from app1.models import Board
@@ -33,8 +33,15 @@ def one(request, id):
 def insert(request):
     pass
 
-def delete(request):
-    pass
+def delete(request, id):
+    print('받은 id는>> ', id)
+    # id를 가지고 일단 검색해오세요.
+    one = Board.objects.get(id = id)
+    # 삭제하세요.
+    one.delete()
+    print('삭제완료 id는>> ', id)
+    # 리스트로 다음페이지를 호출하게 해주세요.
+    return redirect('/app1/list')
 
 def update(request):
     pass

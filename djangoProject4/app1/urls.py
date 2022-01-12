@@ -10,8 +10,8 @@ urlpatterns = [
     path('/list', app1.views.list, name='list'),
     path('/insert', app1.views.insert, name='insert'),
     path('/one/<id>', app1.views.one, name='one'),
-    path('/delete', app1.views.delete, name='delete'),
-    path('/update', app1.views.update, name='update'),
+    path('/delete/<id>', app1.views.delete, name='delete'),
+    path('/update/<id>', app1.views.update, name='update'),
     path('/update2', app1.views.update2, name='update2'),
 ]
 
