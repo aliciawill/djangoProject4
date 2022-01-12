@@ -6,6 +6,7 @@ from app1.models import Board
 
 
 def index(request):
+    request.session['writer'] = 'alicia'
     return render(request, 'app1/index.html')
 
 
