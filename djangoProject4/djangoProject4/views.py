@@ -3,4 +3,8 @@ from django.shortcuts import render
 
 # Create your views here.
 def start(request):
-    return HttpResponse("<a href='app1'>to Board</a>")
+    return HttpResponse("<a href='app1'>" +
+                        "<button style='width:200px; background:red;'>" +
+                        "to Board" +
+                        "</button>" +
+                        "</a>")
