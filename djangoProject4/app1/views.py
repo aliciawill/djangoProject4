@@ -31,7 +31,7 @@ def one(request, id):
     return render(request, 'app1/one.html', context)
 
 def insert(request):
-    pass
+    return render(request, 'app1/insert.html')
 
 def delete(request, id):
     print('받은 id는>> ', id)
