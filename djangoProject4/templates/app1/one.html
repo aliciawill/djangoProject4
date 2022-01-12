@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        table {
+            margin-left: 100px; /* 바깥쪽여백 <--> padding */
+        }
+        .left {
+            width: 100px;
+        }
+        .right{
+            width: 300px;
+        }
+        #center{
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<h3>번호 {{ one.id }}번 게시물 상세페이지입니다.</h3>
+<hr>
+<table border="1">
+
+    <tr>
+        <td class="left">번호</td>
+        <td class="right">{{ one.id }}</td>
+    </tr>
+    <tr>
+        <td>제목</td>
+        <td>{{ one.title }}</td>
+    </tr>
+    <tr>
+        <td>내용</td>
+        <td id="center">{{ one.content }}</td>
+    </tr>
+    <tr>
+        <td>작성자</td>
+        <td>{{ one.content }}</td>
+    </tr>
+</table>
+</body>
+</html>

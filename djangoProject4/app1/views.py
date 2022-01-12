@@ -19,8 +19,16 @@ def list(request):
     # 데이터를 넣어서 보내줄 template지정, 데이터를 넘겨줌.
     return render(request, 'app1/list.html', context)
 
-def one(request):
-    pass
+def one(request, id):
+    print('받은 id는>> ', id)
+    # id를 가지고 검색해주세요.
+    one = Board.objects.get(id = id)
+    # dic로 만들어주세요.
+    context = {
+        "one" : one
+    }
+    # template에 넣어주세요.
+    return render(request, 'app1/one.html', context)
 
 def insert(request):
     pass

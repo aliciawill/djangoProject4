@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2988ce6-1d57-4158-a739-b6d8a0d46a3f" name="Changes" comment="2022-01-11 화요일">
+      <change afterPath="$PROJECT_DIR$/../djangoProject4/templates/app1/one.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../djangoProject4/app1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../djangoProject4/app1/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../djangoProject4/app1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../djangoProject4/app1/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject4/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../djangoProject4/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject4/templates/app1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../djangoProject4/templates/app1/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../djangoProject4/templates/app1/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../djangoProject4/templates/app1/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -151,7 +150,7 @@
       <workItem from="1641515342269" duration="19092000" />
       <workItem from="1641771299468" duration="22570000" />
       <workItem from="1641860389833" duration="23072000" />
-      <workItem from="1641946807513" duration="7892000" />
+      <workItem from="1641946807513" duration="8840000" />
     </task>
     <task id="LOCAL-00001" summary="2022-01-06 11:29">
       <created>1641436207274</created>

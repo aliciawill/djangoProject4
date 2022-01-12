@@ -51,7 +51,11 @@
         {% for one in list %}
             <tr>
                 <td class="td1">{{one.id}}</td>
-                <td class="td2">{{one.title}}</td>
+                <td class="td2">
+                    <a href="/app1/one/{{one.id}}">
+                        {{one.title}}
+                    </a>
+                </td>
                 <td class="td3">{{one.writer}}</td>
             </tr>
         {% endfor %}
