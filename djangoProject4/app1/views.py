@@ -93,6 +93,18 @@ def delete(request, id):
     # 리스트로 다음페이지를 호출하게 해주세요.
     return redirect('/app1/list')
 
+def delete2(request):
+    id = request.GET.get('id')
+    print('받은 id는>> ', id)
+    # id를 가지고 일단 검색해오세요.
+    one = Reply.objects.get(id = id)
+    # 삭제하세요.
+    result = one.delete()
+    print('삭제 요청 결과는 >> ' , result)
+    print('삭제완료 id는>> ', id)
+    # 리스트로 다음페이지를 호출하게 해주세요.
+    return HttpResponse(result[0])
+
 def update(request, id):
     print('받은 id는>> ', id)
     # 받은 id를 가지고 db에서 가지고 온다.

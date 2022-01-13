@@ -19,6 +19,8 @@
                     }, 
                     success : function (res) {
                         {#alert(json)#}
+                        {#res2_start = '<tr id=><td>'#}
+                        {#res2_end = '</td></tr>'#}
                         res2 = '- <img src="/static/car.png" width="20" height="20"> ' +
                               res.content + '(' + res.writer + ') <br>'
                         alert(res2)
@@ -31,7 +33,33 @@
                     }
                 })
             })
-        })
+           $('.bdelete').click(function () {
+               alert($(this).attr('id'))
+               selector_id = $(this).attr('id')
+               $.ajax({
+                   url : '/app1/delete2',
+                   data : {
+                       id : selector_id
+                   },
+                   success : function (result) {
+                       alert(result)
+                       if (result == 1){
+                             $('#tr-' + selector_id).remove()
+                       }else{
+                               alert('댓글 요청 처리 에러...')
+                       }
+                   },
+                   error : function () {
+                       alert('댓글 요청 삭제 에러...')
+                   }
+               })
+
+              {# selector_tag = $('#tr-' + selector_id)#}
+              {# alert(selector_tag.html())#}
+              {#$('#reply-list').removeChild($('#tr-' + selector_id))#}
+              //$('#reply-list').load(location.href  + '#reply-list')
+           }) 
+        })//root4
     </script>
     <style>
         *{
@@ -90,16 +118,29 @@
             댓글: <input id="word"> <button id="wb">댓글달기</button>
         </td>
     </tr>
-    <tr>
-        <td colspan="2" id="result" style="text-align: left">
-        <div style="text-align: left">
-            {% for r in list %}
+{#    <tr>#}
+{#        <td colspan="2" id="result" style="text-align: left">#}
+{#        <div style="text-align: left">#}
+{#            {% for r in list %}#}
+{#                - <img src="/static/car.png" width="20" height="20">#}
+{#                    {{ r.content }} ({{ r.writer }})<br>#}
+{#            {% endfor %}#}
+{#        </div>#}
+{#        </td>#}
+{#    </tr>#}
+</table>
+<table id="reply_list">
+     {% for r in list %}
+         <tr id="tr-{{r.id}}">
+             <td  style="text-align: left; width: 350px;">
                 - <img src="/static/car.png" width="20" height="20">
-                    {{ r.content }} ({{ r.writer }})<br>
-            {% endfor %}
-        </div>
-        </td>
-    </tr>
+                   {{ r.content }} ({{ r.writer }})<br>
+            </td>
+             <td  style="text-align: left; width: 100px;">
+                 <button style="background: lime" id="{{ r.id }}" class="bdelete">삭제</button>
+            </td>
+         </tr>
+     {% endfor %}
 </table>
 </body>
 </html>
