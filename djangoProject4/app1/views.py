@@ -2,7 +2,7 @@ from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
 
 # Create your views here.
-from app1.models import Board
+from app1.models import Board, Reply
 
 
 def index(request):
@@ -33,9 +33,13 @@ def one(request, id):
     print('받은 id는>> ', id)
     # id를 가지고 검색해주세요.
     one = Board.objects.get(id = id)
+
+    # bid를 가지고 댓글에 대해 검색을 해주어야 한다.
+    list = Reply.objects.filter(bid = id)
     # dic로 만들어주세요.
     context = {
-        "one" : one
+        "one" : one,
+        "list" : list
     }
     # template에 넣어주세요.
     return render(request, 'app1/one.html', context)
@@ -53,7 +57,7 @@ def insert2(request):
     ### 객체 생성--> save()
     title = data.get('title')
     content = data.get('content')
-    writer = data.get('writer')
+    writer = request.session['writer']  #writer = data.get('writer')
     board = Board(title= title, content= content, writer= writer)
     board.save()
     return redirect('/app1/list')

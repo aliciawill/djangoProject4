@@ -55,6 +55,21 @@
             </a>
         </td>
     </tr>
+    <tr>
+        <td colspan="2">
+            댓글: <input id="word"> <button id="wb">댓글달기</button>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" >
+        <div style="text-align: left">
+            {% for r in list %}
+                - <img src="/static/car.png" width="20" height="20">
+                    {{ r.content }} ({{ r.writer }})<br>
+            {% endfor %}
+        </div>
+        </td>
+    </tr>
 </table>
 </body>
 </html>
