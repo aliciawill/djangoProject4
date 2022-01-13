@@ -101,8 +101,9 @@ def delete2(request):
     # 삭제하세요.
     result = one.delete()
     print('삭제 요청 결과는 >> ' , result)
+    # 삭제 요청 결과는 >> (1, {'app1.Reply': 1})
     print('삭제완료 id는>> ', id)
-    # 리스트로 다음페이지를 호출하게 해주세요.
+    # 리스트s로 다음페이지를 호출하게 해주세요.
     return HttpResponse(result[0])
 
 def update(request, id):
