@@ -1,8 +1,37 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+        <!-- jQuery JS -->
+    <script src="{% static 'jquery-3.4.1.min.js' %}"></script>
+    <script>
+        $(function () {
+            $('#wb').click(function () {
+                content = $('#word').val()
+                $.ajax({
+                    url : "/app1/insert3",
+                    data : {
+                       bid : '{{ one.id }}',
+                       content : content,
+                       writer : '{{ request.session.writer }}'
+                    }, 
+                    success : function (res) {
+                        {#alert(json)#}
+                        res2 = '- <img src="/static/car.png" width="20" height="20">' +
+                              res.content + '(' + res.writer + ') <br>'
+                        alert(res2)
+                        $('#result').append(res2)
+                        {#$('#result').append(res)#}
+                    }, 
+                    error : function () {
+                        alert('ajax 오류!')
+                    }
+                })
+            })
+        })
+    </script>
     <style>
         *{
             text-align: center;
@@ -61,7 +90,7 @@
         </td>
     </tr>
     <tr>
-        <td colspan="2" >
+        <td colspan="2" id="result" style="text-align: left">
         <div style="text-align: left">
             {% for r in list %}
                 - <img src="/static/car.png" width="20" height="20">

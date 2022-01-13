@@ -1,4 +1,5 @@
 from django.core.paginator import Paginator
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
 
 # Create your views here.
@@ -61,6 +62,26 @@ def insert2(request):
     board = Board(title= title, content= content, writer= writer)
     board.save()
     return redirect('/app1/list')
+
+def insert3(request):
+    data = request.GET
+    print(data)
+    print('댓글의 bid >> ', data.get('bid'))
+    print('댓글의 content >> ', data.get('content'))
+    print('댓글의 writer >> ', data.get('writer'))
+    bid = data.get('bid')
+    content = data.get('content')
+    writer = data.get('writer')
+    reply = Reply(bid= bid, content=content, writer=writer)
+    reply.save()
+    context = {
+        "content" : content,
+        "writer" : writer
+    }
+    return JsonResponse(context)
+    # return HttpResponse('- <img src="/static/car.png" width="20" height="20">' +
+    #                       content + '(' + writer + ')<br>')
+    # 뭘 리턴해야하지?????
 
 def delete(request, id):
     print('받은 id는>> ', id)
