@@ -19,11 +19,12 @@
                     }, 
                     success : function (res) {
                         {#alert(json)#}
-                        res2 = '- <img src="/static/car.png" width="20" height="20">' +
+                        res2 = '- <img src="/static/car.png" width="20" height="20"> ' +
                               res.content + '(' + res.writer + ') <br>'
                         alert(res2)
                         $('#result').append(res2)
                         {#$('#result').append(res)#}
+                        $('#word').val('')
                     }, 
                     error : function () {
                         alert('ajax 오류!')
