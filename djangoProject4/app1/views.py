@@ -106,6 +106,7 @@ def delete2(request):
     # 리스트s로 다음페이지를 호출하게 해주세요.
     return HttpResponse(result[0])
 
+
 def update(request, id):
     print('받은 id는>> ', id)
     # 받은 id를 가지고 db에서 가지고 온다.
