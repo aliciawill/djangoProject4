@@ -5,7 +5,14 @@
     <meta charset="UTF-8">
     <title>Title</title>
         <!-- jQuery JS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css'%}">
+    <!-- pybo CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css'%}">
+    <!-- jQuery JS -->
+
     <script src="{% static 'jquery-3.4.1.min.js' %}"></script>
+    <!-- Bootstrap JS -->
+    <script src="{% static 'bootstrap.min.js'%}"></script>
     <script>
         $(function () {
             $('#wb').click(function () {
@@ -66,7 +73,7 @@
             text-align: center;
         }
         table {
-            margin-left: 100px; /* 바깥쪽여백 <--> padding */
+            margin-left: 20px; /* 바깥쪽여백 <--> padding */
         }
         .left {
             width: 100px;

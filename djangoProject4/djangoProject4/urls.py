@@ -27,8 +27,4 @@ urlpatterns = [
     path('app1', include('app1.urls')),
 ]
 
-from djangoProject4 import settings
 
-if settings.DEBUG:
-   import debug_toolbar
-   urlpatterns += [ url(r'^__debug__/', include(debug_toolbar.urls)), ]
